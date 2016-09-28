@@ -1,0 +1,30 @@
+<ion-view title="Signup" id="page3">
+    <ion-content padding="true" class="has-header">
+        <form id="signup-form5" class="list">
+            <ion-list id="signup-list2">
+                <label class="item item-input" id="signup-input9">
+                    <span class="input-label">Name:</span>
+                    <input type="text" ng-model="reg_Name" placeholder="Full Name" required>
+                </label>
+                <label class="item item-input" id="signup-input10">
+                    <span class="input-label">Username:</span>
+                    <input type="text" ng-model="reg_username" placeholder="Username" required>
+                </label>
+                <label class="item item-input" id="signup-input11">
+                    <span class="input-label">Email:</span>
+                    <input id="reg_Email_id" type="email" ng-model="reg_Email_id" placeholder="Email" required>
+                </label>
+                <label class="item item-input" id="signup-input12">
+                    <span class="input-label">Password:</span>
+                    <input id="reg_Pwd" type="password" ng-model="reg_Pwd" ng-change="match()" placeholder="Password">
+                </label>
+                <label class="item item-input" id="signup-input13">
+                    <span class="input-label">Confirm Password:</span>
+                    <input id="reg_Cnf_Pwd" type="password" ng-model="reg_Cnf_Pwd" ng-change="match()" placeholder="Password">
+                </label>
+            </ion-list>
+        </form>
+        <a ui-sref="login" id="signup-button5" class="button button-balanced button-block" ng-click="reg()">Sign up</a>
+        <button id="signup-button6" type="reset" class="button button-assertive button-block button-clear">Reset</button>
+    </ion-content>
+</ion-view>

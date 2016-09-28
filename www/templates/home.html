@@ -1,0 +1,27 @@
+<ion-view title="Home" id="page4">
+    <ion-content padding="true" class="has-header">
+        <h4 id="home-heading1" style="color:#000000;text-align:center;">Enter the product to be searched</h4>
+        <form id="home-form6" class="list">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input id="search" type="search" placeholder="Search for the item here">
+            </label>
+        </form>
+        <button id="home-button7" class="button button-positive  button-block" ng-click="getProduct()">submit</button>
+        <ion-list id="home-list3">
+            <ion-item id="home-list-item1">Crews Stratos Safety Glasses, Black Frame, Clear lens</ion-item>
+            <ion-item id="home-list-item2">The Crews Stratos Black and Clear Frame Glasses are practical yet stylish safety glasses. The black glass frame is made from nylon for longevity.</ion-item>
+            <ion-item id="home-list-item3">Crews Glasses</ion-item>
+        </ion-list>
+        <div id="div_ReviewList" style="display:none;" ng-model="ReviewWithSentiment" align="center">
+
+            <table border="1px" align="center"> <tr>Sentiment Analysis From Using Alchemy API</tr>
+                <tr> <td>Most recent review</td> <td>{{ReviewWithSentiment.reviewText}}</td> </tr>
+                <tr> <td>Sentiment of the review</td> <td>{{ReviewWithSentiment.sentiment}}</td> </tr>
+                <tr> <td>Sentiment Score of the review</td> <td>{{ReviewWithSentiment.score}}</td> </tr>
+                <tr>{{ReviewWithSentiment.reviewText}} </tr>
+            </table>
+
+    </div>
+    </ion-content>
+</ion-view>

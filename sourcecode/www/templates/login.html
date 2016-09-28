@@ -1,0 +1,16 @@
+<ion-view title="Login" id="page1">
+    <ion-content padding="true" class="has-header">
+        <form id="login-form2" class="list">
+            <label class="item item-input" id="login-input1">
+                <span class="input-label">email:</span>
+                <input type="email" ng-model="Email_id" placeholder="Username/email" required>
+            </label>
+            <label class="item item-input" id="login-input2">
+                <span class="input-label">password:</span>
+                <input type="password" ng-model="Pwd" placeholder="Password" required>
+            </label>
+        </form>
+        <a ui-sref="home" id="login-button1" type="submit" class="button button-positive  button-block" ng-click="validate()">login</a>
+        <a ui-sref="signup" id="login-button4" type="submit" class="button button-stable  button-block" ng-click="fetch('/Reg')">Create Account</a>
+    </ion-content>
+</ion-view>
